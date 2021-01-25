@@ -55,7 +55,7 @@
 
 <ul>
 <li>Add connection</li>
-<li>Remove connection (Must remove loose nodes after removing connection)</li>
+<li>Remove connection (Must remove loose non-fundamental nodes after removing connection)</li>
 <li>Modify connection weight</li>
 <li>Add Node on connection</li>
 <li>Modify node type</li>

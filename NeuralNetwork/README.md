@@ -31,4 +31,3 @@ NEAT model of Deep learning
 		- Add Node on connection
 		- Modify node type
 		- Remove node
-	

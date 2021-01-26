@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>README.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1>Neural Network</h1>
+
+<p>NEAT model of Deep learning</p>
+
+<h2>Classes:</h2>
+
+<ul>
+<li><h3>Connection:</h3>
+
+<ul>
+<li>Contains 2 Node pointers and 2 doubles</li>
+<li>Node pointers are to and from</li>
+<li>Doubles are weight and bias</li>
+</ul>
+</li>
+<li><h3>Node:</h3>
+
+<ul>
+<li>Virtual class</li>
+<li>Has vector of connection pointers to and vector of connection pointers from</li>
+<li>Child classes are nodes with various functions</li>
+<li>Function is applied to each of the inputs</li>
+<li>Results of return vals of the functions are added to give the output</li>
+<li>Has a boolean which determines if it is a fundamental node (input or output node)</li>
+</ul>
+</li>
+<li><h3>NeuralNetwork:</h3>
+
+<ul>
+<li>Contains vector of Node pointers and vector of Connection pointers</li>
+<li>Has a calculate function which takes input of vector of double and returns vector of double</li>
+<li>Output is restricted to (-1, 1)</li>
+<li>Can evolve from parent (NeuralNetwork pointer):
+
+<ul>
+<li>Small chance for mutations</li>
+<li>If condition for small chance is satisfied, random number is generated</li>
+<li>Number is evaluated to determine type of mutation</li>
+<li>New random number is generated to determine involved Nodes, connections etc.</li>
+<li>List of possible mutations:
+
+<ul>
+<li>Add connection</li>
+<li>Remove connection (Must remove loose non-fundamental nodes after removing connection)</li>
+<li>Modify connection weight</li>
+<li>Add Node on connection</li>
+<li>Modify node type</li>
+<li>Remove node</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+</body>
+</html>

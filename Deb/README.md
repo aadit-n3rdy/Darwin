@@ -33,6 +33,42 @@ Darwin's Evolving Buggers
 			- eat
 			- attack
 			- reproduce
+  - Alternative network configuration:
+  	- Pass each food item in visual range through food network
+	- Take weighted average of outputs
+	- Take output from 
+  	- Food network:
+		- Takes an object within visual range
+		- Inputs:
+			- Relative x pos
+			- Relative y pos
+			- Food Quality
+		- Outputs:
+			- Torque
+			- Acceleration
+			- Weight
+			- Eat
+	- Combiner network:
+		- Takes food network output from 5 closest objects within visual range
+		- If < 5 inputs, set all 3 arguments for respective objects to 0
+		- Takes energy and other necessary object details
+		- Inputs:
+			- 15 from 5 food networks
+			- Energy level
+			- Velocity X
+			- Velocity Y
+		- Outputs:
+			- Acceleration X
+			- Acceleration Y
+			- Eat (tries eating if > 0)
+  	- Single NEAT network:
+		- Takes 5 nearest objects as input
+		- If < than 5 objects, distance is set to 0, and foodQuality is set to 0
+		- Inputs:
+			- Velocity X
+			- Velocity Y
+
+
   - Method void update:
 	- Calculates the output from the networks, using a getOrganismsWithinVision callback
 	- Basic physics to move the organism

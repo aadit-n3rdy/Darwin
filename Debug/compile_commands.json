@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/n3rdy/dev/cpp/Darwin/Debug",
+  "command": "/usr/bin/c++  -I/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/include -I/home/n3rdy/dev/cpp/Darwin/Deb -g N3rdNEAT -o CMakeFiles/Darwin.dir/Darwin/main.cpp.o -c /home/n3rdy/dev/cpp/Darwin/Darwin/main.cpp",
+  "file": "/home/n3rdy/dev/cpp/Darwin/Darwin/main.cpp"
+},
+{
+  "directory": "/home/n3rdy/dev/cpp/Darwin/Debug",
+  "command": "/usr/bin/c++  -I/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/include -I/home/n3rdy/dev/cpp/Darwin/Deb -g N3rdNEAT -o CMakeFiles/Darwin.dir/Deb/deb.cpp.o -c /home/n3rdy/dev/cpp/Darwin/Deb/deb.cpp",
+  "file": "/home/n3rdy/dev/cpp/Darwin/Deb/deb.cpp"
+},
+{
+  "directory": "/home/n3rdy/dev/cpp/Darwin/Debug/N3rdNEAT",
+  "command": "/usr/bin/c++  -I/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/include/N3rdNEAT -g -o CMakeFiles/N3rdNEAT.dir/src/node.cpp.o -c /home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/node.cpp",
+  "file": "/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/node.cpp"
+},
+{
+  "directory": "/home/n3rdy/dev/cpp/Darwin/Debug/N3rdNEAT",
+  "command": "/usr/bin/c++  -I/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/include/N3rdNEAT -g -o CMakeFiles/N3rdNEAT.dir/src/connector.cpp.o -c /home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/connector.cpp",
+  "file": "/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/connector.cpp"
+},
+{
+  "directory": "/home/n3rdy/dev/cpp/Darwin/Debug/N3rdNEAT",
+  "command": "/usr/bin/c++  -I/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/include/N3rdNEAT -g -o CMakeFiles/N3rdNEAT.dir/src/neural_network.cpp.o -c /home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/neural_network.cpp",
+  "file": "/home/n3rdy/dev/cpp/Darwin/N3rdNEAT/src/neural_network.cpp"
+}
+]

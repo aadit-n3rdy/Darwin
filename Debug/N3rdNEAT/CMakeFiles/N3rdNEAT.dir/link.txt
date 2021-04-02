@@ -1,2 +1,0 @@
-/usr/bin/ar qc libN3rdNEAT.a CMakeFiles/N3rdNEAT.dir/src/node.cpp.o CMakeFiles/N3rdNEAT.dir/src/connector.cpp.o CMakeFiles/N3rdNEAT.dir/src/neural_network.cpp.o
-/usr/bin/ranlib libN3rdNEAT.a

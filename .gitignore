@@ -1,2 +1,11 @@
 **~
-build/**
+Debug/**
+.cache/**
+.ccls-cache/**
+CMakeFiles/**
+**.cmake
+CMakeCache.txt
+*.json
+build/
+Debug/
+Makefile

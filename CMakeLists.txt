@@ -1,15 +1,18 @@
 cmake_minimum_required(VERSION 3.10)
-
 set(proj_name Darwin)
 project(${proj_name} VERSION 0.1)
 add_subdirectory(N3rdNEAT)
 
-find_package(SDL2 REQUIRED)
-find_package(SDL_image REQUIRED)
+find_package(SFML REQUIRED system window graphics audio)
 
-add_executable(Darwin Darwin/main.cpp Deb/deb.cpp)
+set_source_files_properties(tags PROPERTIES GENERATED true)
+add_custom_target(tags
+	    COMMAND ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .
+	    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+add_executable(Darwin src/main.cpp Deb/deb.cpp src/UnivParent.cpp)
 
 target_compile_options(Darwin PRIVATE N3rdNEAT)
-target_include_directories(Darwin PRIVATE N3rdNEAT/include/ PRIVATE ${SDL2_INCLUDE_DIRS} PRIVATE Deb/)
+target_include_directories(Darwin PRIVATE N3rdNEAT/include/ PRIVATE Deb/ )
 
-target_link_libraries(Darwin N3rdNEAT SDL2 SDL_image)
+target_link_libraries(Darwin N3rdNEAT sfml-graphics sfml-window sfml-system)

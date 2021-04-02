@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/Darwin.dir/Darwin/main.cpp.o CMakeFiles/Darwin.dir/Deb/deb.cpp.o -o Darwin  N3rdNEAT/libN3rdNEAT.a -lSDL2 -lSDL_image 
